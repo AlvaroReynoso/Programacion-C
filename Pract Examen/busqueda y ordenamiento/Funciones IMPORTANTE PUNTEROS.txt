@@ -1,0 +1,10 @@
+EN C
+cuando paso por referencia a un valor o caracter no hace falta retornarlo xq ya cambia en la funcion extra.
+cuando paso algo por referencia se agrega * en = uso de variables dentro de funciones extras, &* en scaneos, en parametros y prototipos *
+y en los parametros cuando lo llamo en la principal *
+
+PROTOTIPO 
+LLAMADA EN FUNCION PRINCIPAL DENTRO DE PARENTESIS (*)
+DEFINIR  VARIABLE ENTERA *
+ASIGNACION DE DNI=ALGO ,ESE DNI VA CON * (SI ES REFERENCIA)
+

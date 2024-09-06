@@ -1,0 +1,36 @@
+acciones que se van a repetir muchas veces es preferible hacerla en SubProceso ,siempre se ejecuta igual, si cambia desde el proceso ,cambia en 
+todos los lugares
+la funcion devuelve siempre un resultado ,lo muestra en alguna variable
+los subprocesos puede tener PARAMETROS: entrada: van entre parentesis ()
+parametros de  entrada: info que agrego al subproceso (POR VALOR Y POR REFERENCIA)
+POR VALOR: ESTOY INGRESANDO UN DATO ,no importa lo q suceda con esa variable ,no se modifica el valor, envio sin importar lo q pase
+POR REFERENCIA: Si cambia ,vuelve al algortimo principal , es modificado,cambia en el algoritmo principal
+POR REFERENCIA VUELVE MODIFICADA
+parametros de salida: Retornan ,siempre retorna un valor
+Las funciones devuelven resultados
+Los subprocesos solo hacen procesos ,no devuelven resultados
+default de los arreglos en procesos es POR REFERENCIA, osea q si lo modifique ,vuelve al algoritmo principal modificado
+default comun es POR VALOR
+si modifico en funcion ,lo puedo llamar en otros procesos por referencia vuelve cambiado.
+
+----------------------------
+C
+TODAS SON FUNCIONES ,LA UNICA DIFERENCIA ES QUE NO RETORNA VALOR  (SUBPROCESO=VOID) Y RETORNAN VALOR (FUNCIONES=RETURN)
+1 SOLA FUNCION MAIN,donde se llama a todo
+LOS PARAMETROS SON VALORES QUE RECIBE LA FUNCION PARA MANIPULAR , recibe variables
+EN C POR DEFECTO ES ..POR VALOR
+PARAMETROS POR VALOR
+
+PUNTEROS= PASAR DATOS COMO REFERENCIA
+No reciben un valor sino la direccion de memoria de la funcion a que le paso la llamada. Le doy la info de donde
+esta declarada la variable ,sabiendo su direccion ,y puede ir a modificar su valor.
+NO PUEDO PASAR UN ARREGLO POR VALOR ,ES SI O SI POR REFERENCIA (VA A CAMBIAR)
+
+
+Toda variable que va dentro de un subproceso o funcion son VARIABLES LOCALES
+Varible global ,en C! va arriba de la funcion principal, antes del inicio de cualquier funcion
+otra diferencia con pseint: Funcion o subproceso es lo mismo ,y hace algo en concreto.
+EN C TODO ES FUNCION
+SOLO USAMOS INT O FLOAT COMO RETORNO, Y VOID NO RETORNA NADA!
+
+

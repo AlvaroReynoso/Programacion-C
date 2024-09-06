@@ -1,0 +1,90 @@
+BUSQUEDA:
+
+buscar un dato dentro de un arreglo
+1)defino y dimensiono arreglo.
+2) lo recorremos con un FOR
+3) defino una variable de busqueda llamda (abuscar) o referido
+4)asigno el numero a buscar ..ej(15)
+5) pregunto si el array en i es igual a abuscar(variable)
+6) si dice que si lo encuentra (print)
+7) si dice q no ,dejo buscando hasta detener el proceso, entonces apenas lo encuentre en el SI ,le asigno un valor mas alto
+
+si el dato esta al final de la tabla (xq puede ser una tabla muy larga) va a demorar muchisimo
+para eso hay un metodo llamado "Ordenamiento"
+divide la cantidad de registyros en 2 y ve si lo que busco coicide con la celda.
+Si no coinicide veo si es mayor o menor,entonces acoto el rango para arriba de eso
+preguntar array[5] < abuscar (en un if)
+hago las preguntas necesarias (<,>)
+asi voy acotando la busqueda
+1+10=11/2=5,5 
+1+5=6/2=3 esa formula es para ir acotando datos a buscar
+2+5=7/2=3,5 (uso la parte entera)
+3
+ejmplo busco 40) 
+me paro posicion 5 y hago la pregunta (25<40)
+entonces busco
+5+10=15/2=7,5
+7
+39 es < 40 ,si
+busco en los ultimos 4
+10+7=17/2=8,5 (8)
+46=40 no, 46<40=no, entonces busco para arriba
+7+8=15/2=7
+ya busque aqui ,entonces no encontre el dato
+EN UNA BUSQUEDA DICOTOMICA BUSCO RANGO COMPLETO Y CALCULO LA MITAD
+VEMOS SI COINCIDE CON LA CELDA, Y PREGUNTAMOS SI ES MAYOR O NO SI NO ES
+SI ES V O F BUSCO ACOTAR DESDE LA MITAD PARA ARRIBA O MITAD PARA ABAJO
+REDUCIENDO RANGO DE BUSQUEDA
+SIGO BUSCANDO LA MITAD DE ESO ASI SIGO ACOTANDO
+
+en programacion:
+dimensiono array 1ero
+2) necesito saber cual es el primer renglon y el ultimo (depende la longitud del arreglo)
+3) primero= 0 , ultimo=10
+DENTRO DE UN DO WHILE
+4) la formula es indiceAbuscar= trunc(toma la parte entera) (primero+ultimo/(2))
+5) array[indiceAbuscar]=aBuscar
+6) si = print encontro , sino array[indiceAbuscar]<datoAbuscar entonces busco para abajo ,hago un proceso
+primero=indiceAbuscar+1, en falso ultimo=indiceAbuscar-1;
+7) la salida del do while la hago con una bandera (salir=falso && primero<ultimo)
+8) el salir = verdadero va dentro el if de print Encontro
+
+PARA ESA BUSQUEDA DICOTOMICA LO TENGO QUE TENER ORDENADOS
+ORDENAMIENTO
+ESTA ES LA LOGICA MENTAL.....
+busco todos y veo el mas chico, miro todos y veo el que le sigue y asi ,como le digo a la maquina...
+Hago pivots
+1)me paro en la primer fila y me guardo el valor ..ej(38) como el mas chico
+2)recorro hacia abajo y comparo ,20<38? si ,entocnes lo guardo
+y asi con todos.
+3) ubico en la 1er fila el mas chico y el 38 en la fila de donde saque el 9, el resto los dejo iguales
+4) Hago pivot(en una celda nueva) en la 2da fila y tomo ese valor como el mas chico. Hago todo igual desde esa fila
+5) entonces dejo el 9 en la 1era e intercambio en la fila donde estaba el 15 pongo el 20 ,y donde estoy haciendo pivot pongo el menor
+6) hago lo mismo cambiando esas posiciones donde encuentro los mas chicos
+BASICAMENTE BUSCO Y PONGO EN ORDEN CRECIENTE EN UNA TABLA
+PIVOTE Y RECORRO E INTERCAMBIO EL DATO MAS CHICO EN EL PIVOT Y LO QUE TENGO EN EL PIVOT
+LO UBICO EN LA FILA DONDE ENCONTRE EL DATO MAS CHICO
+
+ALGORITMO EN PROGRAMACION...........
+1)arreglo y dimension
+2) UN FOR para recorrerlo (0 a9 )10
+3)hago un proceso "menor=array[i]
+4) empiezo a ver la fila hacia abajo, entonces recorro con otro FOR desde i+1 hasta el final
+5) if array[j] <menor DENTRO DE FOR J
+6) si es menor lo guardo (menor=array[j]) sino no hago nada
+7)Cuando llega al final del FOR J afuera, (array[i]=menor) pero tambien necesito guardar la posicion
+de J ,entonces en el if verdadero ..(posicion=[j])
+8) fuera del FOR J  array[posicion]=array[i]
+9) cuando llego al final de los FORS no necesito hacer pivots en la ultima
+entonces el FOR I no necesito hacerlo hasta la ultima fila ,sino hasta una anterior
+ENTONCES FOR I VA HASTA 9-1
+
+EN SECUENCIAL NO HACE FALTA ORDENARLO ,no uso for para hacer una BUSQUEDA ,sino un WHILE (mientras no encuentre)
+2 cosas para el mientras: MIENTRAS VARIABLE ENCONTRADA SEA 0 Y QUE NO ME HAYA PASADO DE LOS ELEMENTOS A BUSCAR
+
+LA BUSQUEDA SECUENCIAL ES LA MEJOR ,APRENDERSE QUE ES SIEMPRE IGUAL
+se usa variables tipo bandera
+EN DICOTOMICA SI
+ORDENAR SIEMPRE DE MENOR A MAYOR!!
+
+

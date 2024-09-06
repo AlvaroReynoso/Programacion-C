@@ -1,0 +1,13 @@
+LONGITUD ===STRLEN
+PRECEDER/comparacion ==== STRCMP
+
+
+fgets= lo uso si uso cadenas con espacio, corta con el ENTER
+scan = lo uso si tengo cadenas sin espacio, corta con espacio
+
+STRLEN= CUENTA LA CANTIDAD QUE EL USUARIO INGRESO
+SIZEOF= TOMA LA CANTIDAD TOTAL DEL ARRAY
+eje= for (int i=0; i<strlen(nombre);i++)
+va a tomar desde 0 hasta la ultima letra que se agrego
+eje= for (int i=0; i<sizeof(nombre);i++)
+va a tomar desde 0 hasta el ultimo valor del array que se asigno

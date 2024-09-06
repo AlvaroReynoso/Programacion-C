@@ -1,0 +1,6 @@
+Los corchetes de los arrays en funciones van en:
+PROTOTIPOS (si es bidimensional se agregan los 2 [] [])
+CREACION DE UN SUBPROCESO O FUNCION
+ 
+
+Y NO VAN CUANDO LLAMO A FUNCION EN PRINCIPAL

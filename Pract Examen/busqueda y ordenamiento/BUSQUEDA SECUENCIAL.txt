@@ -1,0 +1,23 @@
+BUSQUEDA SECUENCIAL (busco de a uno hasta que encuentro)
+Secuencial con menos elementos sirve
+Sino con muchos binaria es mejor
+
+subproceso agrego el parametro de la columna (columna_buscar)
+defino i,encontrado como entero       //encontrado es la bandera
+i=0
+encontrado=0
+
+ACA USO WHILE O DO WHILE
+Si array[i,columna_buscar]==elemento
+	encontrdado =1            // porque lo encontre =1)
+mientras que (encontrado ==0 y i<=n-1)         (n-1 longitud del arreglo , cantidad de filas seria)   //IMPORTANTE 
+	sino
+		i=i+1				(aumento la cant filas)
+
+TAMBIEN PUEDO SACAR LA BANDERA Y PONER i=n+1 
+y en el mientras que (i<n-1)        //cuando lo encuentra lo iguala si no lo encuentra llega hasta el n-1 y termina
+y desp preguntar 
+ 	si i==n 					// ES MEJOR CON BANDERA ,MAS ENTENDIBLE
+	escribir "elemento no encontrado"
+	sino 
+	escribir "elemento no encontrado"
