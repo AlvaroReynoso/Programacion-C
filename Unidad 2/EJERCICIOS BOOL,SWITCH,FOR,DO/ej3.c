@@ -1,3 +1,4 @@
+//Ingrese el mes y que cuente los dias que tienen desde el mes seleccionado hasta diciembre
 #include <stdio.h>
 #include <stdlib.h>
 void main()

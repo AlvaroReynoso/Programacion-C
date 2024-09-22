@@ -5,11 +5,11 @@ void main()
 
 {
     float lado1, lado2, lado3;
-    printf("ingrese lado1\n");
+    printf("ingrese lado 1\n");
     scanf("%f", &lado1);
-    printf("ingrese lado2\n");
+    printf("ingrese lado 2\n");
     scanf("%f", &lado2);
-    printf("ingrese lado3\n");
+    printf("ingrese lado 3\n");
     scanf("%f", &lado3);
 
     if (lado1 == lado2 && lado2 == lado3)

@@ -1,3 +1,4 @@
+//Ingrese un numero y que muestre el facotrial del mismo
 #include <stdio.h>
 #include <stdlib.h>
 void main()
