@@ -1,30 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-
+#include <stdlib.h>/*
+Escriba un algoritmo donde se le pida al usuario que ingrese la cantidad de personas invitadas a un evento, luego pedir que ingrese
+los nombres de la misma. Al finalizar la carga mostrar al usuario la lista de invitados.
+*/
 void main()
 {
-  float cantVentasxVendedor,ventasVendedor,acumVentasporVendedor=0,acumVentasTotal=0;   
-    int v;
-    printf("Ingrese cant vendedores");
-    scanf("%d",&v);
-    float vendedoresYproductos[v][5];
-    acumVentasTotal=0;
-    for (int i = 0; i < v; i++)
+    int cantInvitados;
+    printf("Ingrese la cantidad de invitados: ");
+    scanf("%i", &cantInvitados);
+    char invitados[cantInvitados][40];
+    for (int i = 0; i < cantInvitados; i++)
     {
-        for (int j = 0; j <5 ; j++)
-        {
-            printf("Ingrese la venta del %d producto: ",j+1);
-            scanf("%f",&vendedoresYproductos[v][j]);
-            acumVentasTotal+=vendedoresYproductos[v][j];
-        }
+        printf("Ingrese el nombre del invitado %i: ", i + 1);
+        scanf("%s", invitados[i]);
     }
-    for (int i = 0; i < v; i++)
+    printf("Lista de invitados:\n");
+    for (int i = 0; i < cantInvitados; i++)
     {
-       for ( int j = 0; j <=4; j++)
-       {
-            acumVentasporVendedor+=vendedoresYproductos[v][j];
-       }
-       printf("La cantidad total por vendedor es: %.2f\n",acumVentasporVendedor);
-        printf("La cantidad total es: %.2f",acumVentasTotal);
+        printf("%i-%s\n", i + 1, invitados[i]);
     }
+
 }
